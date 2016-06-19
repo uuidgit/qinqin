@@ -7,20 +7,20 @@ import java.util.logging.Logger;
 
 public class DateHelper {
 	 
-    /**
-     * ÈÕÖ¾
+	/**
+     * æ—¥å¿—
      *
      */
     private static Logger _logger = Logger.getLogger(DateHelper.class.getName());
  
     /**
-     * ½«Ö¸¶¨¸ñÊ½µÄ×Ö·û´®×ª»¯³ÉÈÕÆÚ
+     * å°†æŒ‡å®šæ ¼å¼çš„å­—ç¬¦ä¸²è½¬åŒ–æˆæ—¥æœŸ
      *
      * @param day
-     *            ÈÕÆÚ×Ö·û´®
+     *            æ—¥æœŸå­—ç¬¦ä¸²
      * @param format
-     *            ¸ñÊ½»¯×Ö·û´®
-     * @return ÈÕÆÚ
+     *            æ ¼å¼åŒ–å­—ç¬¦ä¸²
+     * @return æ—¥æœŸ
      */
     public static Date getDate(String date, String format) {
         Date d = null;
@@ -36,13 +36,13 @@ public class DateHelper {
     }
  
     /**
-     * ½«ÈÕÆÚ×ª»»³ÉÖ¸¶¨¸ñÊ½µÄ×Ö·û´®
+     * å°†æ—¥æœŸè½¬æ¢æˆæŒ‡å®šæ ¼å¼çš„å­—ç¬¦ä¸²
      *
      * @param date
-     *            ÈÕÆÚ
+     *            æ—¥æœŸ
      * @param format
-     *            ¸ñÊ½»¯×Ö·û´®
-     * @return ¸ñÊ½»¯ºóµÄÈÕ×Ó×Ö·û´®
+     *            æ ¼å¼åŒ–å­—ç¬¦ä¸²
+     * @return æ ¼å¼åŒ–åçš„æ—¥å­å­—ç¬¦ä¸²
      */
     public static String format(Date date, String format) {
         String d = null;

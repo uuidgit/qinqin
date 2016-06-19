@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.yuntai</groupId>
+    <artifactId>hs-yun</artifactId>
+    <version>1.0.0</version>
+  </parent>
+  <artifactId>hs-yun-service</artifactId>
+  <version>1.0.0</version>
+  <packaging>pom</packaging>
+  <name>hs-yun-service</name>
+  <url>http://maven.apache.org</url>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	<!--内部依赖-->
+	<com.yuntai.hs-yun-service-call.version>1.0.0</com.yuntai.hs-yun-service-call.version>
+	<com.yuntai.hs-yun-service-cfg.version>1.0.0</com.yuntai.hs-yun-service-cfg.version>
+	<com.yuntai.hs-yun-service-coupon.version>1.0.0</com.yuntai.hs-yun-service-coupon.version>
+	<com.yuntai.hs-yun-service-hos.version>1.0.0</com.yuntai.hs-yun-service-hos.version>
+	<com.yuntai.hs-yun-service-ill.version>1.0.0</com.yuntai.hs-yun-service-ill.version>
+	<com.yuntai.hs-yun-service-media.version>1.0.0</com.yuntai.hs-yun-service-media.version>
+	<com.yuntai.hs-yun-service-olt.version>1.0.0</com.yuntai.hs-yun-service-olt.version>
+	<com.yuntai.hs-yun-service-olt.version>1.0.0</com.yuntai.hs-yun-service-olt.version>
+	<com.yuntai.hs-yun-service-online.version>1.0.0</com.yuntai.hs-yun-service-online.version>
+	<com.yuntai.hs-yun-service-opm.version>1.0.0</com.yuntai.hs-yun-service-opm.version>
+	<com.yuntai.hs-yun-service-pat.version>1.0.0</com.yuntai.hs-yun-service-pat.version>
+	<com.yuntai.hs-yun-service-opm.version>1.0.0</com.yuntai.hs-yun-service-opm.version>
+	<com.yuntai.hs-yun-service-queue.version>1.0.0</com.yuntai.hs-yun-service-queue.version>
+	<com.yuntai.hs-yun-service-queue.version>1.0.0</com.yuntai.hs-yun-service-queue.version>
+	<com.yuntai.hs-yun-service-reg.version>1.0.0</com.yuntai.hs-yun-service-reg.version>
+	<com.yuntai.hs-yun-service-sch.version>1.0.0</com.yuntai.hs-yun-service-sch.version>
+	
+	<!--外部依赖-->
+	<com.yuntai.hs-med-support.version>1.0.0</com.yuntai.hs-med-support.version>
+	<com.yuntai.hs-yun-orm-media.version>1.0.0</com.yuntai.hs-yun-orm-media.version>
+	<com.yuntai.hs-yun-api.version>1.0.0</com.yuntai.hs-yun-api.version>
+	<com.yuntai.hs-med-access-beans.version>1.0.0</com.yuntai.hs-med-access-beans.version>
+	<com.yuntai.hs-common-api.version>1.0.0</com.yuntai.hs-common-api.version>
+	<com.yuntai.hs-yun-mq-sdk.version>1.0.0</com.yuntai.hs-yun-mq-sdk.version>
+	<com.yuntai.hs-med-sms-sdk.version>1.0.0</com.yuntai.hs-med-sms-sdk.version>
+	
+	<com.yuntai.hs-yun-orm-hos.version>1.0.0</com.yuntai.hs-yun-orm-hos.version>
+	<com.yuntai.hs-yun-orm-olt.version>1.0.0</com.yuntai.hs-yun-orm-olt.version>
+	<com.yuntai.hs-yun-orm-access.version>1.0.0</com.yuntai.hs-yun-orm-access.version>
+	<com.yuntai.hs-yun-orm-reg.version>1.0.0</com.yuntai.hs-yun-orm-reg.version>
+	<com.yuntai.hs-yun-orm-cfg.version>1.0.0</com.yuntai.hs-yun-orm-cfg.version>
+	<com.yuntai.hs-yun-orm-pat.version>1.0.0</com.yuntai.hs-yun-orm-pat.version>
+	<com.yuntai.hs-yun-orm-online.version>1.0.0</com.yuntai.hs-yun-orm-online.version>
+	<com.yuntai.hs-yun-orm-opm.version>1.0.0</com.yuntai.hs-yun-orm-opm.version>
+	<com.yuntai.hs-yun-orm-sch.version>1.0.0</com.yuntai.hs-yun-orm-sch.version>
+	<com.yuntai.hs-yun-orm-ill.version>1.0.0</com.yuntai.hs-yun-orm-ill.version>
+	<com.yuntai.hs-yun-orm-coupon.version>1.0.0</com.yuntai.hs-yun-orm-coupon.version>
+  </properties>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>com.yuntai</groupId>
+      <artifactId>hs-common-api</artifactId>
+      <version>${com.yuntai.hs-common-api.version}</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+	
+	<modules>
+		
+		<!--module>hs-yun-service-pat</module>
+		<module>hs-yun-service-sch</module>
+		<module>hs-yun-service-reg</module>
+		<module>hs-yun-service-hos</module>
+		<module>hs-yun-service-cfg</module>     
+        
+        <module>hs-yun-service-queue</module>
+        <module>hs-yun-service-ill</module>
+        <module>hs-yun-service-media</module>
+        <module>hs-yun-service-opm</module>
+        <module>hs-yun-service-olt</module>
+        <module>hs-yun-service-coupon</module-->	<!-- 优惠券 -->
+        <module>hs-yun-service-online</module>
+    </modules>
+
+</project>

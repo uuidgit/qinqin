@@ -1,0 +1,1 @@
+select * from cfg_enum_dict where ENUM_TYPE='IsOrNot' and ENUM_VALUE in (1,0)
